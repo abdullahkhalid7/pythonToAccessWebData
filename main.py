@@ -1,9 +1,2 @@
-import urllib.request
-import urllib.error
-url = input("Enter - ")
-'''
-'http://data.pr4e.org/intro-short.txt'
-'''
-fh = urllib.request.urlopen(url)
-for line in fh:
-    print(line.decode().strip())
+for i in range(5):
+    print('https://www.amazon.com/s?k=power+supply&qid=1675700171&ref=sr_pg_'+str(i+1))

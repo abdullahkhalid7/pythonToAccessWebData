@@ -13,14 +13,14 @@ Sum = 0
 
 tags = soup('span')
 for tag in tags:
-    # print(type(int(tag.contents[0])))
+    print(type(int(tag.contents[0])))
     Sum = Sum + int(tag.contents[0])
     # Look at the parts of a tag
-    # print ('TAG:',tag)
-    # print ('URL:',tag.get('href', None))
-    # print ('Contents:',tag.contents[0])
-    # print ('Attrs:',tag.attrs)
-    # break
+    print('TAG:', tag)
+    print('URL:', tag.get('href', None))
+    print('Contents:', tag.contents[0])
+    print('Attrs:', tag.attrs)
+    break
 
 # for line in html:
 #     Sum = Sum + line
